@@ -76,7 +76,7 @@ cargo run greet -l bg name.txt
 ### Test
 
 ```bash
-go test -v
+cargo test
 ```
 
 ### Generate Docs
