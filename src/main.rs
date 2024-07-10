@@ -1,10 +1,14 @@
+//! CLI tool for greeting users in different languages.
+//!
+//! This application reads a name from a file and generates a greeting
+//! in the specified language (English, Spanish, or Bulgarian).
 use std::io;
 use clap::{Parser, Subcommand};
 use cli_rust::{read_name_from_file, get_greeting};
 
 #[derive(Parser)]
 #[command(name = "cli-rust")]
-#[command(version = "1.0")]
+#[command(version = "0.1.0")]
 #[command(about = "CLI tool for greeting users in different languages")]
 struct Cli {
     #[command(subcommand)]

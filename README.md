@@ -82,17 +82,13 @@ cargo test
 ### Generate Docs
 
 ```bash
-godoc
+cargo doc
 ```
 
 Browse docs:
 
 ```bash
-# this package
-open http://localhost:6060/pkg/github.com/swiftsoftwaregroup/cli-go
-
-# all packages
-open http://localhost:6060/pkg/
+cargo doc --open
 ```
 
 ### How to create a new project
